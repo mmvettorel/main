@@ -13,14 +13,10 @@ public class Main {
 		System.out.println("Ingrese un numero entero: ");
 		numero = entrada.nextInt();
 		
-		IFactorial calculador = new FactorialAlt2Impl();
+		IFactorial calculador = new FactorialImpl();
 				
 		System.out.println(calculador.calcular(numero));
 				
-		FactorialAlt1Impl calculadorFactorialCasteado = (FactorialAlt1Impl) calculador;
-		
-		System.out.println(calculadorFactorialCasteado.descripcion());
-		
 		entrada.close();
 	}
 
